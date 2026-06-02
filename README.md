@@ -2,6 +2,7 @@
 
 
 import java.time.LocalDateTime; // lưu thông tin người dùng
+
 public class User {
     private int userId;            
     private String username;         
@@ -11,6 +12,7 @@ public class User {
     private String status;
 
 import java.time.LocalDateTime; // lưu lịch sử chat
+
 public class Message {
     private int messageId;       
     private int senderId;           
@@ -21,6 +23,7 @@ public class Message {
 }
 
 import java.time.LocalDateTime; // Ghi log hệ thống 
+
 public class SystemLog {
     private int logId;              
     private String logLevel;         
