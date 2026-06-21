@@ -35,7 +35,7 @@ public class Client {
             try {
                 String message;
                 while (isRunning && (message = reader.readLine()) != null) {
-                    // Nhận được tin nhắn thô từ Server Ném sang MessageHandler của bên Client xử lý
+                    //Nhận được tin nhắn thô từ Server Ném sang MessageHandler của bên Client xử lý
                     MessageHandler.handleFromServer(message);
                 }
             } catch (IOException e) {
