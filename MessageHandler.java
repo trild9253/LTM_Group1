@@ -1,8 +1,8 @@
-// Xử lý tin nhắn
+//Xử lý tin nhắn
 public class MessageHandler {
 
     public static String handleMessage(String sender, String message) {
-        // Nếu là chat riêng (@Tên nội_dung)
+        //Nếu là chat riêng (@Tên nội_dung)
         if (message.startsWith("@")) {
             String[] data = message.split(" ", 2);
 
@@ -16,7 +16,7 @@ public class MessageHandler {
             }
         }
 
-        // Nếu không có @ thì chat nhóm
+        //Nếu không có @ thì chat nhóm
         Message msg = new Message(sender, null, message, Protocol.GROUP);
         return "[" + msg.getSender() + "] : " + msg.getContent();
     }
